@@ -8,11 +8,11 @@
 .nav {
   background: #080808;
   display: grid;
-  grid: 60px auto 76px / auto;
-  width: 4rem;
+  grid: 60px auto 76px / 4rem;
 }
 .logo {
-  margin: 1rem auto auto 1rem;
+  justify-self: center;
+  align-self: center;
 }
 .LogoImg {
   width: 2rem;
@@ -22,6 +22,49 @@
 figure {
   margin: 0;
 }
+.menu {
+  display: grid;
+  /* grid: 224px 3rem auto / auto; */
+}
+menu {
+  padding: 0;
+}
+
+.pages {
+  display: grid;
+  grid: 60px repeat(3, 44px) / auto;
+}
+
+.search {
+  height: 44px;
+  align-self: center;
+  justify-self: center;
+  /* margin: 0.375rem; */
+}
+
+.iconimg {
+  justify-items: center;
+  padding: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1.75rem;
+}
+
+.iconimg:hover {
+  background: #1f1f1f;
+}
+
+input {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #5c5c5c;
+  padding-inline: 4px;
+  padding-block: 0px;
+}
+p {
+  display: none;
+}
 
 /* Desktop */
 @media screen and (min-width: 900px) {
@@ -29,14 +72,15 @@ figure {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid: auto/16.7fr 83.3fr;
+    grid: auto/20.0rem 100fr;
   }
   .nav {
     background: #080808;
     width: 100%;
+    grid: 60px auto 76px / 20rem;
   }
   .logo {
-    margin: 2rem auto auto 2rem;
+    margin: 2.5rem auto auto 2.75rem;
   }
   .LogoImg {
     width: 100%;
@@ -45,6 +89,70 @@ figure {
   }
   figure {
     margin: 0;
+  }
+  .menu {
+    display: grid;
+    grid: 224px 3rem auto / auto;
+  }
+  menu {
+    padding: 0;
+    margin: auto 1.75rem;
+  }
+
+  .pages {
+    display: grid;
+    grid: 60px repeat(3, 44px) / auto;
+  }
+
+  .search {
+    display: flex;
+    background: #000000;
+    border: 1px solid #5c5c5c;
+    color: #5c5c5c;
+    border-radius: 8px;
+    align-content: flex-start;
+    height: 44px;
+  }
+  .iconimg {
+    justify-self: center;
+    align-self: center;
+    padding: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .iconimg:hover {
+    background: transparent;
+  }
+
+  input {
+    display: inline;
+    background: transparent;
+    border: none;
+    color: #5c5c5c;
+    padding-inline: 4px;
+    padding-block: 0px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .menuPages {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .menuPages:hover {
+    background: #1f1f1f;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  p {
+    display: inline;
   }
 }
 
@@ -60,7 +168,8 @@ figure {
     grid: auto / 80px auto 100px;
   }
   .logo {
-    margin: 1rem auto auto 1rem;
+    justify-self: center;
+    align-self: center;
   }
   .LogoImg {
     width: 2rem;
@@ -69,5 +178,20 @@ figure {
   }
   figure {
     margin: 0;
+  }
+
+  .menu {
+    display: grid;
+    grid: 100fr/100fr;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .listContainer {
+    display: none;
+  }
+
+  .pages {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
