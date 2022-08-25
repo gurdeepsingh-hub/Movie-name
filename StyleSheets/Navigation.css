@@ -15,8 +15,8 @@
   align-self: center;
 }
 .LogoImg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   object-fit: cover;
 }
 figure {
@@ -32,7 +32,7 @@ menu {
 
 .pages {
   display: grid;
-  grid: 60px repeat(3, 44px) / auto;
+  grid: repeat(4, 44px) / auto;
 }
 
 .search {
@@ -45,13 +45,16 @@ menu {
 .iconimg {
   justify-items: center;
   padding: 0.75rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
-
+.menuPages {
+  align-self: center;
+  justify-self: center;
+}
 .iconimg:hover {
   background: #1f1f1f;
+  border-radius: 1.5rem;
 }
 
 input {
@@ -83,8 +86,8 @@ p {
     margin: 2.5rem auto auto 2.75rem;
   }
   .LogoImg {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 16px;
     object-fit: cover;
   }
   figure {
@@ -139,12 +142,15 @@ p {
 
   .menuPages {
     border-radius: 8px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-items: center;
+    align-self: center;
+    justify-self: flex-start;
+    align-content: center;
   }
   .menuPages:hover {
     background: #1f1f1f;
+    opacity: 0.9;
   }
 
   a {
@@ -160,20 +166,20 @@ p {
 @media screen and (max-width: 600px) {
   .container {
     display: grid;
-    grid: 10fr 90fr / auto;
+    grid: 3rem 100fr / auto;
   }
   .nav {
     background: #080808;
     width: 100%;
-    grid: auto / 80px auto 100px;
+    grid: 3rem / 80px auto 100px;
   }
   .logo {
     justify-self: center;
     align-self: center;
   }
   .LogoImg {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     object-fit: cover;
   }
   figure {
@@ -182,10 +188,29 @@ p {
 
   .menu {
     display: grid;
-    grid: 100fr/100fr;
+    grid: 100%/100fr;
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .menuPages {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .menuPages:hover {
+    background: #1f1f1f;
+  }
+
+  .iconimg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .listContainer {
     display: none;
   }
