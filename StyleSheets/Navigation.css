@@ -19,12 +19,23 @@
   height: 1.5rem;
   object-fit: cover;
 }
+.Desktop {
+  display: none;
+}
+.TabletAndMobile {
+  background-image: url(../images/Logo1.svg);
+  background-size: cover;
+  width: 2.5rem;
+  height: 2rem;
+  position: relative;
+  top: 10px;
+}
 figure {
   margin: 0;
 }
 .menu {
   display: grid;
-  /* grid: 224px 3rem auto / auto; */
+  grid: 224px 3rem auto / auto;
 }
 menu {
   padding: 0;
@@ -89,6 +100,12 @@ p {
     width: 100px;
     height: 16px;
     object-fit: cover;
+  }
+  .TabletAndMobile {
+    display: none;
+  }
+  .Desktop {
+    display: inline;
   }
   figure {
     margin: 0;
@@ -185,7 +202,9 @@ p {
   figure {
     margin: 0;
   }
-
+  .TabletAndMobile {
+    top: 1px;
+  }
   .menu {
     display: grid;
     grid: 100%/100fr;
