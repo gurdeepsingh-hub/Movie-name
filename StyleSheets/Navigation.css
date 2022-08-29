@@ -1,4 +1,8 @@
 /* tablet */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
 
 .container {
   width: 100vw;
@@ -16,8 +20,8 @@
   align-self: center;
 }
 .LogoImg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   object-fit: cover;
 }
 .Desktop {
@@ -26,8 +30,8 @@
 .TabletAndMobile {
   background-image: url(../images/Logo1.svg);
   background-size: cover;
-  width: 2.5rem;
-  height: 2rem;
+  width: 2rem;
+  height: 1.5rem;
   position: relative;
   top: 10px;
 }
@@ -36,7 +40,7 @@ figure {
 }
 .menu {
   display: grid;
-  grid: 200px 2px auto / auto;
+  grid: 183px 2px auto / auto;
 }
 menu {
   padding: 0;
@@ -44,7 +48,7 @@ menu {
 
 .pages {
   display: grid;
-  grid: repeat(4, 44px) / auto;
+  grid: repeat(4, 2.5rem) / auto;
 }
 
 .search {
@@ -57,10 +61,11 @@ menu {
 .iconimg {
   justify-items: center;
   padding: 0.75rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: b;
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
 }
+
 .menuPages {
   align-self: center;
   justify-self: center;
@@ -87,16 +92,17 @@ ul {
 .navList {
   /* width: 40px; */
   display: grid;
-  grid: repeat(auto-fill, 44px) auto / 2rem;
+  grid: repeat(auto-fill, 2.4rem) / 2rem;
   align-items: center;
   justify-items: center;
   justify-content: center;
 }
 .navListImage {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   object-fit: cover;
   border-radius: 4px;
+  margin: 8px 0;
 }
 .line {
   height: 2px;
@@ -121,6 +127,21 @@ ul {
   bottom: 10px;
   left: 20px;
 }
+.CreateList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  background: #f33f3f;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+a {
+  text-decoration: none;
+}
 
 /* Desktop */
 @media screen and (min-width: 900px) {
@@ -133,7 +154,7 @@ ul {
   .nav {
     background: #080808;
     width: 100%;
-    grid: 60px auto 76px / 20rem;
+    grid: 60px auto 60px / 20rem;
   }
   .logo {
     margin: 2.5rem auto auto 2.75rem;
@@ -154,7 +175,7 @@ ul {
   }
   .menu {
     display: grid;
-    grid: 198px 2px auto / auto;
+    grid: 183px 2px auto / auto;
   }
   .line {
     border-bottom: #5c5c5c solid 1px;
@@ -167,7 +188,7 @@ ul {
 
   .pages {
     display: grid;
-    grid: repeat(4, 44px) / auto;
+    grid: repeat(4, 2.5rem) / auto;
   }
 
   .search {
@@ -182,9 +203,10 @@ ul {
   .iconimg {
     justify-self: center;
     align-self: center;
-    padding: 0.75rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    padding: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 12px;
   }
   .iconimg:hover {
     background: transparent;
@@ -211,22 +233,20 @@ ul {
     align-self: center;
     justify-self: flex-start;
     align-content: center;
+    color: white;
   }
   .menuPages:hover {
     background: #1f1f1f;
-    height: 2.5rem;
-
-    opacity: 0.9;
+    height: 2.4rem;
   }
 
   a {
-    color: white;
     text-decoration: none;
   }
   p {
     display: inline;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
   }
   ul {
     padding: 0;
@@ -236,14 +256,14 @@ ul {
     color: white;
     list-style-type: none;
     display: grid;
-    grid: repeat(6, 44px) / auto;
+    grid: repeat(auto-fill, 2.4rem) / 264px;
     justify-items: left;
     justify-content: left;
   }
   .navlistText {
     color: #9a9a9a;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
     align-items: center;
     margin: 0 12px;
   }
@@ -252,19 +272,39 @@ ul {
     align-items: center;
   }
   .navListImage {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: cover;
     margin-left: 12px;
     border-radius: 4px;
   }
   .navListItemText {
-    font-size: 15px;
+    font-size: 0.7rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 0.9rem;
     letter-spacing: 0em;
     text-align: left;
     margin: 0 16px;
+    color: white;
+  }
+  .CreateList {
+    display: flex;
+    justify-content: center;
+    background: #f33f3f;
+    width: 100%;
+    height: 36.5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .plus {
+    margin-right: 10px;
+    color: #080808;
+  }
+  .CLB {
+    color: #080808;
   }
   .user {
     display: flex;
@@ -328,7 +368,7 @@ ul {
     align-self: center;
   }
   .LogoImg {
-    width: 1rem;
+    width: 1.5rem;
     height: 1rem;
     object-fit: cover;
   }
@@ -352,6 +392,7 @@ ul {
     display: flex;
     align-items: center;
     justify-items: center;
+    color: white;
   }
 
   .menuPages:hover {
@@ -359,8 +400,8 @@ ul {
   }
 
   .iconimg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   .listContainer {
