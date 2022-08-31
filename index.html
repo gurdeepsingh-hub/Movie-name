@@ -12,98 +12,24 @@
     <div class="container">
       <aside class="nav">
         <figure class="logo">
-          <img class="LogoImg Desktop" src="./images/Logo.svg" alt="" />
+          <img
+            class="LogoImg Desktop"
+            src="./images/Logo.svg"
+            alt="Moivelist logo"
+          />
           <div class="LogoImg TabletAndMobile"></div>
         </figure>
 
         <nav class="menu">
-          <menu class="pages">
+          <menu class="pages" id="MenuPages" onload="MenuPages()">
             <div class="search menuPages">
               <img src="./images/Search.svg" alt="" class="iconimg" />
               <input type="text" class="searchinput" placeholder="Search" />
             </div>
-
-            <a href="" class="menuPages">
-              <div class="menuPages">
-                <img src="./images/home.svg" alt="" class="iconimg" />
-                <p>Home</p>
-              </div>
-            </a>
-
-            <a href="" class="menuPages">
-              <div class="menuPages">
-                <img src="./images/earth.svg" alt="" class="iconimg" />
-                <p>Library</p>
-              </div>
-            </a>
-
-            <a href="" class="menuPages">
-              <div class="menuPages">
-                <img src="./images/Friends.svg" alt="" class="iconimg" />
-                <p>Friends</p>
-              </div>
-            </a>
           </menu>
           <div class="line"></div>
-          <ul class="navList">
+          <ul class="navList" id="navListItem" onload="navListItems()">
             <p class="navlistText">My Lists</p>
-
-            <li class="navListItem">
-              <a href="" class="navListItem">
-                <img
-                  class="navListImage"
-                  src="./images/navigationList/action.jfif"
-                  alt=""
-                />
-                <p class="navListItemText">Action</p>
-              </a>
-            </li>
-            <li class="navListItem">
-              <a href="" class="navListItem">
-                <img
-                  class="navListImage"
-                  src="./images/navigationList/Detectives.jfif"
-                  alt=""
-                />
-                <p class="navListItemText">Detectives</p>
-              </a>
-            </li>
-            <li class="navListItem">
-              <a href="" class="navListItem">
-                <img
-                  class="navListImage"
-                  src="./images/navigationList/Fantasy.jfif"
-                  alt=""
-                />
-                <p class="navListItemText">Fantasy</p>
-              </a>
-            </li>
-            <li class="navListItem">
-              <a href="" class="navListItem">
-                <img
-                  class="navListImage"
-                  src="./images/navigationList/space.jpg"
-                  alt=""
-                />
-                <p class="navListItemText">Space</p>
-              </a>
-            </li>
-            <li class="navListItem">
-              <a href="" class="navListItem">
-                <img
-                  class="navListImage"
-                  src="./images/navigationList/blockbuster.jpg"
-                  alt=""
-                />
-                <p class="navListItemText">Blockbusters</p>
-              </a>
-            </li>
-            <a href="" class="navListItem CreateList">
-              <li class="navListItem">
-                <span class="plus">+</span>
-                <p class="CLB">Create List</p>
-              </li>
-            </a>
           </ul>
         </nav>
 
@@ -134,5 +60,7 @@
 
       <main class="main"></main>
     </div>
+
+    <script src="./loops.js"></script>
   </body>
 </html>
