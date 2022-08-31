@@ -2,7 +2,7 @@ let MenuIcon=['Home','Library','Friends'];
 MenuPages();
 function MenuPages(){
     MenuIcon.forEach((item) => {
-        document.getElementById("MenuPages").innerHTML +=  ' <a href="" class="menuPages"> <div class="menuPages"><img src="./images/'+ item +'.svg" alt="" class="iconimg" /><p>'+item+'</p></div></a> ';
+        document.getElementById("MenuPages").innerHTML +=  ' <a href="" class="menuPages"> <div class="menuPages"><img src="./images/'+ item +'.svg" alt="'+ item +' logo" class="iconimg" /><p>'+item+'</p></div></a> ';
     });
 }
 
@@ -15,7 +15,7 @@ function navListItems(){
                 <img
                   class="navListImage"
                   src="./images/navigationList/`+ item +`"
-                  alt=""
+                  alt="`+item.substring(0,item.lastIndexOf('.'))+` image"
                 />
                 <p class="navListItemText">`+ item.substring(0,item.lastIndexOf('.'))+`</p>
               </a>
