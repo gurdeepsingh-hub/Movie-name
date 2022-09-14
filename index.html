@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movielist</title>
+    <link rel="stylesheet" href="./StyleSheets/Navigation.css" />
+    <link rel="stylesheet" href="./StyleSheets/main.css" />
+    <link rel="stylesheet" href="./StyleSheets/normalize.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="nav">
+        <figure class="logo">
+          <img
+            class="LogoImg Desktop"
+            src="./images/Logo.svg"
+            alt="Moivelist logo"
+          />
+          <div class="LogoImg TabletAndMobile"></div>
+        </figure>
+
+        <nav class="menu">
+          <menu class="pages" id="MenuPages" onload="MenuPages()">
+            <div class="search menuPages">
+              <img src="./images/Search.svg" alt="" class="iconimg" />
+              <input type="text" class="searchinput" placeholder="Search" />
+            </div>
+          </menu>
+          <div class="line"></div>
+          <ul class="navList" id="navListItem" onload="navListItems()">
+            <p class="navlistText">My Lists</p>
+          </ul>
+        </nav>
+
+        <div class="user">
+          <div class="userImg">
+            <img
+              class="userImg"
+              src="./images/user/andreas-dress-I3cA6uut2kM-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="online"></div>
+          <div class="userText">
+            <div class="username">
+              <p>Chan Geme</p>
+            </div>
+            <div class="userhandle">
+              <p>@changeme</p>
+            </div>
+          </div>
+          <div class="dotSymbol">
+            <div class="threedots"></div>
+            <div class="threedots"></div>
+            <div class="threedots"></div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="MainText"></div>
+        <div class="posters" id="Posters" onload="Posters()"></div>
+      </main>
+    </div>
+
+    <script src="./loops.js"></script>
+  </body>
+</html>

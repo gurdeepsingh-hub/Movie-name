@@ -1,0 +1,41 @@
+.main {
+  background: #1e1e1e;
+  display: grid;
+  grid: 2rem 100fr / auto;
+  align-content: flex-start;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  overflow: scroll;
+}
+.posters::-webkit-scrollbar {
+  display: none;
+}
+.poster {
+  margin: 0.5rem;
+  display: grid;
+  grid: 15rem 1rem 1rem / auto;
+  box-sizing: border-box;
+}
+.posterImage {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.MovieName {
+  margin: 0;
+  display: inline;
+}
+.MovieCategory {
+  margin: 0;
+  display: inline;
+}
